@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gasthaus Wendtner - Ambiente</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="slider.js" defer></script>
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo-box">
+          <a href="./index.html#start">
+            <img src="./img/wendtner.png" alt="Wendtner Logo">
+          </a>
+        </div>
+        <nav>
+          <!-- Versuch Burgermenü eingefügt Maik Büttner 14.04.2024 -->
+          <input type="checkbox" id="navigation">
+          <label for="navigation" title="Navigation öffnen">
+            <div class="burgericon">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </label>
+          <ul>
+            <li><a href="./index.html#start">Startseite</a></li>
+            <li><a href="./index.html#reservierung">Reservierung</a></li>
+            <li><a href="./index.html#about">Über uns</a></li>
+            <li><a href="Speisenget.html">Speisekarte</a></li>
+            <li><a href="Ambiente.html">Ambiente</a></li>
+            <li><a href="#footer">Kontakt</a></li>
+            <li><a href="./login.html" style="text-decoration: underline;">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+ <!-------------------> Mia
+<style>
+  .slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    display: flex; /* Added */
+    align-items: center; /* Added */
+  }
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+  .prev, .next { /* Added */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  .prev {
+    left: 10px;
+  }
+  .next {
+    right: 10px;
+  }
+</style>
+
+<!--AMBIENTE Christian Rework----------->
+<section id="ambiente">
+  <h1 style="padding-top: 150px;">Ambiente</h1>
+  <p>Das an der Url gelegene Ausflugsgasthaus lädt Sie ein mit Freunden und Familie im Gastgarten, der Gaststube, dem Tafelzimmer oder dem Saal zu verweilen.
+    <br><br>
+    Gerne organsieren wir auf Anfrage auch Feierlichkeiten und können Ihren Wünschen entsprechend ein besonderes Menü und Dekoration aufsetzen.
+  <br><br>
+  Lassen Sie sich von einigen Bildern inspirieren oder kommen Sie auf einen Besuch vorbei!
+</p>
+</section>
+
+
+<!----Mia--------->
+<!--    <section>
+      <center>
+      <h2 style="padding-top:100px; color:#a0340d; font-family:Nimbus Roman D Extra Bold;font-size: 40px";
+          >Ambiente</h2>
+
+        <p>Das an der Url gelegene Ausflugsgasthaus lädt Sie ein mit Freunden und Familie im Gastgarten, der Gaststube, dem Tafelzimmer oder dem Saal zu verweilen.
+          <br><br>
+          Gerne organsieren wir auf Anfrage auch Feierlichkeiten und können Ihren Wünschen entsprechend ein besonderes Menü und Dekoration aufsetzen.
+        <br><br>
+        Lassen Sie sich von einigen Bildern inspirieren oder kommen Sie auf einen Besuch vorbei!
+
+      </p>
+      </center>
+    </section>
+
+-------------------->
+<section class="slider-container">
+  <div class="slider">
+    <img src="./img/GH_innen1.jpg" alt="Bild 1">
+    <img src="./img/GH_innen2.jpg" alt="Bild 2">
+    <img src="./img/GH_innen3.jpg" alt="Bild 3">
+    <img src="./img/GH_innen4.jpg" alt="Bild 4">
+    <img src="./img/GH_innen5.jpg" alt="Bild 5">
+    <img src="./img/GH_innen6.jpg" alt="Bild 6">
+  </div>
+
+<button class="prev" onclick="prevSlide()">&#10094;</button>
+<button class="next" onclick="nextSlide()">&#10095;</button>
+    </section>
+<!---------------------->
+<section id="ambiente">
+  <h2 style="padding-top: 50px;">Unsere Zimmer</h2>
+  <p>Das an der Url gelegene Ausflugsgasthaus lädt Sie ein mit Freunden und Familie im Gastgarten, der Gaststube, dem Tafelzimmer oder dem Saal zu verweilen.
+    <br><br>
+    Gerne organsieren wir auf Anfrage auch Feierlichkeiten und können Ihren Wünschen entsprechend ein besonderes Menü und Dekoration aufsetzen.
+  <br><br>
+  Lassen Sie sich von einigen Bildern inspirieren oder kommen Sie auf einen Besuch vorbei!
+</p>
+</section>
+
+<!--   <section>
+     <center>
+      <h2 style="padding-top:70px; color:#a0340d; font-family:Nimbus Roman D Extra Bold; font-size: 40px";
+          >Unsere Zimmer</h2>
+    <p>Lassen Sie den Abend bei uns gemütlich ausklingen und nutzen Sie unsere traditionell eingerichteten Zimmer für ein längeres Verweilen in der Region.
+</p>
+    <title>Image Container</title>-->
+
+<div class="image-container">
+    <a href="#">
+    <img src="https://cdn.glitch.global/be246a1e-aeea-4b57-b581-eb7b89cb3ee9/helles-doppelzimmer.jpg?v=1712490298153" alt="Image 1">
+    </a>
+  <a href="#">
+    <img src="https://cdn.glitch.global/be246a1e-aeea-4b57-b581-eb7b89cb3ee9/helles-doppelzimmer2.jpg?v=1712490307085" alt="Image 2">
+  </a>
+    </div>
+
+  <section id="ambiente">
+  <p>Zur Verfügung stehen Ihnen 5 Einzel- und 5 Doppelzimmer auf zwei Etagen. Kontaktieren Sie uns gerne für Anfragen und Reservierung.<br><br> Unser gesamtes Gasthaus ist selbstverständlich barrierefrei und über unseren Personenaufzug zugänglich.
+</p>
+</section>
+
+<div>
+  <center>
+    <h2>Möchten Sie ein Zimmer reservieren?</h2>
+    <p>Füllen Sie gerne dieses Formular aus,<br>
+      und wir melden uns bei Ihnen in Kürze mit der Bestätigung!<br><br>
+    </p>
+
+   <form>
+    <label for="Vorname">Vorname:</label><br>
+    <input name="Vorname" minlength="3" type="text" required><br>
+
+    <label for="Nachname">Nachname:</label><br>
+    <input name="Nachname" minlength="3" type="text" required><br>
+
+    <label for="Telefonnummer">Telefonnummer:</label><br>
+    <input name="Telefonnummer" type="text"><br>
+
+    <label for="E-Mail">E-Mail:</label><br>
+    <input name="E-Mail" type="text"><br>
+
+    <label for="Zimmer">Einzelzimmer oder Doppelzimmer:</label><br>
+    <select name="Zimmer" required><br>
+     <option value="Einzelzimmer">Einzelzimmer</option><br>
+     <option value="Doppelzimmer">Doppelzimmer</option><br>
+     </select><br>
+    <label for="Datum">von Datum:</label><br>
+    <input name="Datum" type="date" required><br>
+
+    <label for="Datum">bis Datum:</label><br>
+    <input name="Datum" type="date" required><br>
+    <br>
+    <input type="submit" value="Reservation">
+</form>
+    <br><br><br>
+  </center>
+</div>
+  </form>
+<!---------------------->
+<footer id="footer">
+
+  <div class="column">
+        <p>
+          <span>GASTHAUS WENDTNER</span>
+          <br>
+          <a href="https://maps.app.goo.gl/vXAPYfn2XqWCMhjg7" target="_blank">Tiefenbach 1, A-3355 Ertl</a>
+          <br>
+          <a href="tel:07477 7310">07477 7310</a>
+          <br>
+          <a href="mailto:gasthaus.wendtner@gmx.at">gasthaus.wendtner@gmx.at</a>
+        </p></div>
+
+  <div class="column">
+    <p>
+      <span>UNSERE ÖFFNUNGSZEITEN</span>
+      <br>Montag - Sonntag: 8 - 18 Uhr <br> Mittwoch Ruhetag</p>
+  </div>
+
+  <div class="column">
+    <p>
+      <a href="agb.html">AGB</a>
+    </p>
+    <p>
+      <a href="impressum.html">Impressum</a>
+    </p>
+    <p>
+      <a href="dsvgo.html">Datenschutzerklärung</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

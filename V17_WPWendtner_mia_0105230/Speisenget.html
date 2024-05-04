@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gasthaus Wendtner - Speisekarte</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./img/GH_favicon.png">
+    <meta name="author" content="Gasthaus Wendtner" />
+		<meta name="description" content="Grüß Gott im Gasthaus Wendtner, genießen Sie regionale Spezialitäten und unser tolles Ambiente im Urltal"/>
+    <meta property="og:title" content="Gasthaus Wendtner - Website" />
+		<meta property="og:description" content="Besuchen Sie unseren Familienbetrieb und überzeugen Sie sich selbst von der gemütlichen Atmosphäre und der köstlichen Küche." />
+		<meta property="og:image" content="./img/wendtner.svg" />
+    <meta name="keywords" content="Gourmet-Restaurant, Gemütliche Unterkunft, Regionale Küche">
+    <!-- eingefügt Maik Büttner 07.04.24-->
+    <script src="Speisekarte.js" defer></script>
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo-box">
+          <a href="./index.html#start">
+            <img src="./img/wendtner.png" alt="Wendtner Logo">
+          </a>
+        </div>
+        <nav>
+          <!-- Versuch Burgermenü eingefügt Maik Büttner 14.04.2024 -->
+          <input type="checkbox" id="navigation">
+          <label for="navigation" title="Navigation öffnen">
+            <div class="burgericon">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </label>
+          <ul>
+            <li><a href="./index.html#start">Startseite</a></li>
+            <li><a href="./index.html#reservierung">Reservierung</a></li>
+            <li><a href="./index.html#about">Über uns</a></li>
+            <li><a href="Speisenget.html">Speisekarte</a></li>
+            <li><a href="Ambiente.html">Ambiente</a></li>
+            <li><a href="#footer">Kontakt</a></li>
+            <li><a href="./login.html" style="text-decoration: underline;">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+
+<!-- eingefügt Maik Büttner 07.04.24-->
+<section id="saisonspecials">
+		<!-- Start Saisonspecials -->
+    <div id="saisonspecials">
+      <h1 class="saisonspecials h1"; >Spezialitäten</h1>
+
+      <div id="changingSpecials" class="specials">
+      </div>
+    </div>
+    <!-- Ende Saisonspecials -->
+</section>
+<!-- eingefügt Maik Büttner 07.04.24-->
+
+
+<section id="speisekarte">
+
+     <!-- Start Speisekarte -->
+    <div id="speisekarte">
+      <h1>Unsere hauseigenen und lokalen Spezialitäten</h1>
+
+      <!-- Start Speisenkarten Inhalt -->
+      <div class="tab-contents">
+
+        <!-- Start Kategorie Speisen -->
+        <div class="tab active" id="speisentab">
+          <div class="grid-container karte">
+
+          <div class="wrapped">
+            <div class="item kategorie" style="margin-top: 5vh;"><h1>Vorspeisen</h1></div>
+
+            <div class="item gericht" style="text-align: center;">
+            <h2 class="gerichtname">Waldviertler Erdäpfelsuppe</h2>
+            <p>Cremige Suppe aus regionalen Erdäpfeln, verfeinert mit Kräutern aus dem eigenen Garten</p>
+            <span class="item preis">€ 4,50</span>
+            <hr class="trennlinie"></div>
+
+            <div class="item gericht" style="text-align: center;">
+            <h2 class="gerichtname">Bio-Kürbiskernaufstrich mit Bauernbrot</h2>
+            <p>Hausgemachter Aufstrich aus steirischen Kürbiskernen, serviert mit knusprigem Bauernbrot</p>
+            <span class="item preis">€ 5,50</span>
+            <hr class="trennlinie"></div>
+
+            <div class="item gericht" style="text-align: center;">
+            <h2 class="gerichtname">Wachauer Marillensalat</h2>
+              <p>Frischer Salat aus Wachauer Marillen, Rucola und Ziegenkäse, abgerundet mit einem Honig-Balsamico-Dressing.</p>
+            <span class="item preis">€ 6,50</span>
+            <hr class="trennlinie"></div>
+          </div>
+
+          <div class="item gericht" style="text-align: center;">
+            <div class="item kategorie" style="margin-top: 10vh;"><h1>Hauptspeisen</h1></div>
+
+            <div class="item gericht" style="text-align: center;">
+            <h2 class="gerichtname">Mostviertler Schnitzel</h2>
+            <p>Zartes Schweineschnitzel, paniert und goldbraun gebraten, serviert mit Erdäpfelsalat und Preiselbeeren.</p>
+            <span class="item preis">€ 15,90</span>
+            <hr class="trennlinie"></div>
+
+            <div class="item gericht" style="text-align: center;">
+            <h2 class="gerichtname">Waldviertler Kartoffelknödel mit Pilzsauce</h2>
+            <p>Hausgemachte Kartoffelknödel aus regionalen Erdäpfeln, serviert mit einer cremigen Pilzsauce und knackigem Gemüse</p>
+            <span class="item preis">€ 14,50</span>
+            <hr class="trennlinie"></div>
+
+            <div class="item gericht" style="text-align: center;">
+            <h2 class="gerichtname">Donauwallerfilet auf Blattspinat</h2>
+            <p>Frisches Filet vom Donauwaller, schonend gegart und serviert auf einem Bett aus Blattspinat, dazu Petersilkartoffeln. </p>
+            <span class="item preis">€ 18,90</span>
+            <hr class="trennlinie"></div>
+          </div>
+
+          <div class="wrapped">
+            <div class="item kategorie" style="margin-top: 10vh;"><h1>Nachspeisen</h1></div>
+
+            <div class="item gericht" style="text-align: center;">
+              <h2 class="gerichtname">Topfenstrudel mit Vanillesauce</h2>
+              <p>Hausgemachter Strudel gefüllt mit cremigem Topfen und Rosinen, serviert mit warmer Vanillesauce.</p>
+              <span class="item preis">€ 7,50</span>
+              <hr class="trennlinie"></div>
+
+              <div class="item gericht" style="text-align: center;">
+              <h2 class="gerichtname">Wachauer Marillenknöde</h2>
+              <p>Köstliche Knödel gefüllt mit saftigen Wachauer Marillen, serviert mit Butterbröseln und Staubzucker.</p>
+              <span class="item preis">€ 8,40</span>
+              <hr class="trennlinie"></div>
+
+              <div class="item gericht" style="text-align: center;">
+              <h2 class="gerichtname">Niederösterreichischer Kaiserschmarrn</h2>
+              <p>Luftiger Kaiserschmarrn aus zarten Eiern, serviert mit Zwetschkenröster.</p>
+              <span class="item preis">€ 8,20</span>
+              <hr class="trennlinie"></div>
+          </div>
+        </div>
+
+          <!-- Start Speisekarte Download -->
+          <div id="speisekartendownload" style="text-align: center;">
+            <button type="button"><a href="Speisekarte.pdf" download class="button" target="_blank">
+            Speisekarte PDF Download</a></button>
+          <!-- Ende Speisekarte Download -->
+        </div>
+        <!-- Ende Kategorie Speisen -->
+      <!-- Start Kategorie Getränke -->
+      <div class="tab" id="getränketab">
+        <div class="grid-container karte">
+
+          <div class="wrapped">
+            <div class="item kategorie" style="margin-top: 10vh;"><h1>Heimische Biere</h1></div>
+
+          <div class="item gericht" style="text-align: center;">
+            <h2 class="gerichtname">Zwettler Märzen</h2>
+            <p>Ein klassisches Märzenbier aus der Brauerei Zwettl.</p>
+            <span class="item preis">€ 3,50 (0,3l)</span>
+            <hr class="trennlinie"></div>
+
+            <div class="item gericht" style="text-align: center;">
+            <h2 class="gerichtname">Göttweiger Hopfen</h2>
+            <p>Ein erfrischendes Helles aus der Göttweiger Brauerei</p>
+            <span class="item preis">€ 3,20 (0,3l)</span>
+            <hr class="trennlinie"></div>
+
+            <div class="item gericht" style="text-align: center;">
+            <h2 class="gerichtname">Stiegl Goldbräu</h2>
+            <p>Ein österreichisches Traditionsbier aus Salzburg.</p>
+            <span class="item preis">€ 3,80 (0,3l)</span>
+            <hr class="trennlinie"></div>
+
+            <div class="item kategorie" style="margin-top: 10vh;"><h1>Weine aus der Region</h1></div>
+
+          <div class="item gericht" style="text-align: center;">
+            <h2 class="gerichtname">Grüner Veltliner, Kamptal DAC </h2>
+            <p>Ein fruchtiger und trockener Weißwein aus dem Kamptal</p>
+            <span class="item preis">€ 4,50 (0,2l)</span>
+            <hr class="trennlinie"></div>
+
+            <div class="item gericht" style="text-align: center;">
+            <h2 class="gerichtname">Riesling, Wachau</h2>
+            <p>Ein eleganter Weißwein aus der Wachau mit mineralischen Noten.</p>
+            <span class="item preis">€ 2 / € 4</span>
+            <hr class="trennlinie"></div>
+
+            <div class="item gericht" style="text-align: center;">
+            <h2 class="gerichtname">Zweigelt, Carnuntum DAC</h2>
+            <p>0,25l / 0,5l <br />Ein samtiger Rotwein mit Aromen von Kirschen und Beeren.</p>
+            <span class="item preis">€ 5 (0,2l)</span>
+            <hr class="trennlinie"></div>
+          </div>
+
+          <div class="wrapped">
+            <div class="item kategorie" style="margin-top: 10vh;"><h1>Spiritousen</h1></div>
+
+          <div class="item gericht" style="text-align: center;">
+            <h2 class="gerichtname">Marillenbrand, Wachau </h2>
+            <p>Ein edler Marillenschnaps aus der Wachau.</p>
+            <span class="item preis">€ 4,20 (2cl)</span>
+            <hr class="trennlinie"></div>
+
+            <div class="item gericht" style="text-align: center;">
+            <h2 class="gerichtname">Waldhimbeergeist</h2>
+            <p>Ein fruchtiger Himbeerschnaps aus heimischen Waldhimbeeren.</p>
+            <span class="item preis">€ 3,50 (2cl)</span>
+            <hr class="trennlinie"></div>
+
+            <div class="item gericht" style="text-align: center;">
+            <h2 class="gerichtname">Williamsbirne, Mostviertel</h2>
+            <p>Ein aromatischer Birnenschnaps aus dem Mostviertel. </p>
+            <span class="item preis">€ 4,50 (2cl)</span>
+            <hr class="trennlinie"></div>
+        </div>
+      </div>
+        <!-- Start Getränkekarte Download -->
+        <div id="speisekartendownload" style="text-align: center;">
+          <button type="button"><a href="Getraenkekarte.pdf" download class="button" target="_blank">
+          Getränkekarte PDF Download</a></button>
+      </div>
+        <!-- Ende Getränkekarte Download -->
+      </div>
+      <!-- Ende Kategorie Getränke -->
+      </div>
+      <!-- Ende Speisekarten-Inhalt -->
+    </div>
+</section>
+
+
+<!--------------->
+
+<footer id="footer">
+
+  <div class="column">
+        <p>
+          <span>GASTHAUS WENDTNER</span>
+          <br>
+          <a href="https://maps.app.goo.gl/vXAPYfn2XqWCMhjg7" target="_blank">Tiefenbach 1, A-3355 Ertl</a>
+          <br>
+          <a href="tel:07477 7310">07477 7310</a>
+          <br>
+          <a href="mailto:gasthaus.wendtner@gmx.at">gasthaus.wendtner@gmx.at</a>
+        </p></div>
+
+  <div class="column">
+    <p>
+      <span>UNSERE ÖFFNUNGSZEITEN</span>
+      <br>Montag - Sonntag: 8 - 18 Uhr <br> Mittwoch Ruhetag</p>
+  </div>
+
+  <div class="column">
+    <p>
+      <a href="agb.html">AGB</a>
+      <br>
+      <a href="impressum.html">Impressum</a>
+      <br>
+      <a href="dsvgo.html">Datenschutzerklärung</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Gasthaus Wendtner - Startseite</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="./img/GH_favicon.png">
+  <meta name="author" content="Gasthaus Wendtner" />
+  <meta name="description" content="Grüß Gott im Gasthaus Wendtner, genießen Sie regionale Spezialitäten und unser tolles Ambiente im Urltal"/>
+  <meta property="og:title" content="Gasthaus Wendtner - Website" />
+  <meta property="og:description" content="Besuchen Sie unseren Familienbetrieb und überzeugen Sie sich selbst von der gemütlichen Atmosphäre und der köstlichen Küche." />
+  <meta property="og:image" content="./img/wendtner.png" />
+  <meta name="keywords" content="Gourmet-Restaurant, Gemütliche Unterkunft, Regionale Küche">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo-box">
+        <a href="./index.html#start">
+          <img src="./img/wendtner.png" alt="Wendtner Logo">
+        </a>
+      </div>
+      <nav>
+        <!-- Versuch Burgermenü eingefügt Maik Büttner 14.04.2024 -->
+        <input type="checkbox" id="navigation">
+        <label for="navigation" title="Navigation öffnen">
+          <div class="burgericon">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </label>
+        <ul>
+          <li><a href="./index.html#start">Startseite</a></li>
+          <li><a href="./index.html#reservierung">Reservierung</a></li>
+          <li><a href="./index.html#about">Über uns</a></li>
+          <li><a href="Speisenget.html">Speisekarte</a></li>
+          <li><a href="Ambiente.html">Ambiente</a></li>
+          <li><a href="#footer">Kontakt</a></li>
+          <li><a href="./login.html" style="text-decoration: underline;">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<!--------------->
+    <section id="start">
+      <div class="fade-in-image">
+      <h1>Griaß eich!</h1>
+      </div>
+    </section>
+
+
+<section id="kuechentext">
+      <h2>Unsere Regionale Küche</h2>
+      <p>
+        Wir bieten Ihnen ganztägig bodenständige Küche mit Spezialitäten der Saison.
+        Unsere Produkte beziehen wir aus der eigenen Landwirtschaft mit Mutterkuhhaltung.<br><br>
+        Natürlich servieren wir auf Wunsch auch kalte und warme Buffets und bieten ein Cateringservice an.<br><br>
+        Das an der Url gelegene Ausflugsgasthaus lädt einfach ein mit Freunden und Familie in Gastgarten,
+        Gaststube, Tafelzimmer oder Saal zu verweilen.
+      </p>
+    </section>
+<!--------------->
+    <section id="foto">
+
+    </section>
+
+<!--Section Reservierung ANFANG-->
+<section id="reservierung">
+<div>
+  <center>
+    <h1>Möchten Sie einen Tisch reservieren?</h1>
+    <p>Füllen Sie gerne dieses Formular aus,<br>
+      und wir melden uns bei Ihnen in Kürze mit der Bestätigung!<br><br>
+    </p>
+    <form>
+      <label for="Vorname">Vorname:  </label> <br>
+      <input  values="Vorname" name="Vorname" minlength="3" type="text" required><br>
+      <label for="Nachname">Nachname:  </label> <br>
+      <input  values="Nachname" name="Nachname" minlength="3" type="text" required><br>
+      <label for="Telefonnummer">Telefonnummer:  </label> <br>
+      <input  values="Telefonnummer" name="Telefonnummer" type="text"><br>
+      <label for="E-Mail">E-Mail:  </label><br>
+      <input  values="E-Mail" name="E-Mail" type="text"><br>
+      <label for="Personenanzahl">Personenanzahl:  </label><br>
+      <input  values="Personenanzahl" min="1" name="Personenanzahl"  type="number" required><br>
+      <label for="Datum">Datum:  </label><br>
+      <input  values="Datum" name="Datum" type="date" required><br>
+      <label for="Uhrzeit">Uhrzeit:  </label><br>
+      <input   placeholder="(z.B.: 11:00 Uhr)" name="Zeit" type="time" required><br><br>
+      <input type="submit" value="Reservation">
+      <br><br><br>
+    </form>
+  </center>
+</div>
+    <!--Section Reservierung ENDE-->
+
+<!--START ABOUT (CK)-->
+<div id="about" class="flex-container">
+  <div class="text-column">
+    <h2>Unsere Geschichte</h2>
+    <p style="text-align: justify;">
+      Das Haus im Urltal wurde 1289 erstmals urkundlich erwähnt.
+      Hier trafen sich zur Zeit der Bauernaufstände 1596/97 die rebellischen
+      Leibeigenen, die nach Demokratie strebten.<br><br>
+
+      Im Laufe der Jahre wurden stetig Änderungen
+      und Neuerungen am Gebäude vorgenommen, indem nun schon
+      seit 7 Generationen die Familie Wendtner Sie zum Genießen von
+      kulinarischen Köstlichkeiten einlädt.
+    </p>
+  </div>
+  <div class="image-column">
+    <img src="./img/GH_alt.jpg" alt="Bild">
+  </div>
+</div>
+<!--ENDE ABOUT (CK)-->
+
+
+<!--ABOUT OLD-->
+       <!-- <section id="about">
+          <div>
+          <h1>Unsere Geschichte</h1>
+          <p>Das Haus im Urltal wurde 1289 erstmals urkundlich erwähnt.
+            Hier trafen sich zur Zeit der Bauernaufstände 1596/97 die rebellischen
+            Leibeigenen, die nach Demokratie strebten.</p>
+          </div>
+
+          <div class="column"><img src="./img/GH_alt.jpg" alt="Foto2"></div>
+
+    			<div class="column"><p>Im Laufe der Jahre wurden stetig Änderungen
+            und Neuerung am Gebäude vorgenommen, indem nun schon
+            seit 7 Generationen die Familie Wendtner Sie zum Genießen von
+            kulinarischen Köstlichkeiten einlädt.</p>
+          </div>
+        </section>-->
+  <!--ENDE ABOUT OLD-->
+
+
+<!--------------->
+    <section id="text">
+      <div>
+        <h2>Wir laden Sie ein...</h2>
+        <p>Das an der Url gelegene Ausflugsgasthaus lädt einfach ein mit Freunden und Familie in Gastgarten, Gaststube, Tafelzimmer oder Saal zu verweilen.</p>
+        <p>Hier feiert man, lebt man , genießt man...</p>
+      </div>
+    </section>
+
+<footer id="footer">
+
+  <div class="column">
+        <p>
+          <span>GASTHAUS WENDTNER</span>
+          <br>
+          <a href="https://maps.app.goo.gl/vXAPYfn2XqWCMhjg7" target="_blank">Tiefenbach 1, A-3355 Ertl</a>
+          <br>
+          <a href="tel:07477 7310">07477 7310</a>
+          <br>
+          <a href="mailto:gasthaus.wendtner@gmx.at">gasthaus.wendtner@gmx.at</a>
+        </p></div>
+
+  <div class="column">
+    <p>
+      <span>UNSERE ÖFFNUNGSZEITEN</span>
+      <br>Montag - Sonntag: 8 - 18 Uhr <br> Mittwoch Ruhetag</p>
+  </div>
+
+  <div class="column">
+    <p>
+      <a href="agb.html">AGB</a>
+    </p>
+    <p>
+      <a href="impressum.html">Impressum</a>
+    </p>
+    <p>
+      <a href="dsvgo.html">Datenschutzerklärung</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

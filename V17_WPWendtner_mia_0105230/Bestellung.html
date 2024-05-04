@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Gasthaus Wendtner - Startseite</title>
+    <link rel="stylesheet" href="style.css">
+  
+    <link rel="icon" type="image/png" href="./img/GH_favicon.png">
+    <meta name="author" content="Gasthaus Wendtner">
+    <meta name="description" content="Grüß Gott im Gasthaus Wendtner, genießen Sie regionale Spezialitäten und unser tolles Ambiente im Urltal">
+    <meta property="og:title" content="Gasthaus Wendtner - Website">
+    <meta property="og:description" content="Besuchen Sie unseren Familienbetrieb und überzeugen Sie sich selbst von der gemütlichen Atmosphäre und der köstlichen Küche.">
+    <meta property="og:image" content="./img/wendtner.png">
+    <meta name="keywords" content="Gourmet-Restaurant, Gemütliche Unterkunft, Regionale Küche">
+</head>
+   <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        img {
+            max-width: 100px;
+            height: auto;
+        }
+    
+
+    <style>
+        .table-container {
+            width: 100%; 
+            display: flex;
+            justify-content: center;
+        }
+
+        #dishesTable {
+            margin: auto; 
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+<body>
+    <header>
+          <div class="container">
+      <div class="logo-box">
+        <a href="./index.html#start">
+          <img src="./img/wendtner.png" alt="Wendtner Logo">
+        </a>
+      </div>
+      <nav>
+        <!-- Versuch Burgermenü eingefügt Maik Büttner 14.04.2024 -->
+        <input type="checkbox" id="navigation">
+        <label for="navigation" title="Navigation öffnen">
+          <div class="burgericon">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </label>
+        <ul>
+          <li><a href="./index.html#start">Startseite</a></li>
+          <li><a href="./index.html#reservierung">Reservierung</a></li>
+          <li><a href="./index.html#about">Über uns</a></li>
+          <li><a href="Speisenget.html">Speisekarte</a></li>
+          <li><a href="Ambiente.html">Ambiente</a></li>
+          <li><a href="#footer">Kontakt</a></li>
+          <li><a href="./login.html" style="text-decoration: underline;">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+    <section id="Bestellung">
+      <div class="form-container" id="Bestellung-form"></div>
+        <h2>Gerichte</h2>
+        <form action="OrderProcess.php" method="post" id="orderForm">
+            <table id="dishesTable">
+                <tr>
+                    <th>Gericht</th>
+                    <th>Verfügbar</th>
+                    <th>Anzahl</th>
+                </tr>
+            </table>
+            <button type="submit">Bestellung aufgeben</button>
+        </form>
+    </section>
+</div>
+<footer id="footer">
+<div class="column">
+<p>
+<span>GASTHAUS WENDTNER</span>
+<br />
+<a href="https://maps.app.goo.gl/vXAPYfn2XqWCMhjg7" target="_blank"
+  >Tiefenbach 1, A-3355 Ertl</a
+>
+<br />
+<a href="tel:07477 7310">07477 7310</a>
+<br />
+<a href="mailto:gasthaus.wendtner@gmx.at">gasthaus.wendtner@gmx.at</a>
+</p>
+</div>
+
+<div class="column">
+<p>
+<span>UNSERE ÖFFNUNGSZEITEN</span>
+<br />Montag - Sonntag: 8 - 18 Uhr <br />
+Mittwoch Ruhetag
+</p>
+</div>
+
+<div class="column">
+<p>
+<a href="agb.html">AGB</a>
+</p>
+<p>
+<a href="impressum.html">Impressum</a>
+</p>
+<p>
+<a href="dsvgo.html">Datenschutzerklärung</a>
+</p>
+</div>
+</footer>
+
+<script>
+function showOrderPage() {
+document.getElementById("OrderPage").style.display = "none";
+document.getElementById("OrderProcess").style.display = "block";
+}
+
+</script>
+</body>
+</html>

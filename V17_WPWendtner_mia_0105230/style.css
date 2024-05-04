@@ -1,0 +1,938 @@
+@font-face {
+  font-family: "nimbus-sans";
+  src: url("https://use.typekit.net/af/da0c19/00000000000000000001518d/27/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/da0c19/00000000000000000001518d/27/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/da0c19/00000000000000000001518d/27/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "nimbus-sans";
+  src: url("https://use.typekit.net/af/360cf4/000000000000000000012544/27/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/360cf4/000000000000000000012544/27/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/360cf4/000000000000000000012544/27/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "nimbus-sans";
+  src: url("https://use.typekit.net/af/50ea52/00000000000000000001011c/27/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/50ea52/00000000000000000001011c/27/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/50ea52/00000000000000000001011c/27/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "nimbus-roman";
+  src: url("https://use.typekit.net/af/019711/000000000000000077359eed/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/019711/000000000000000077359eed/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/019711/000000000000000077359eed/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "nimbus-roman";
+  src: url("https://use.typekit.net/af/29b397/000000000000000077359ef2/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/29b397/000000000000000077359ef2/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/29b397/000000000000000077359ef2/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+
+html,
+body {
+  margin: auto;
+  font-family: "nimbus-sans";
+  font-weight: 300;
+  background-color: #ded1ad;
+}
+
+p {
+  font-size: 20px;
+}
+
+/***NAV**************************************************************************/
+
+header {
+  padding: 20px 0;
+  background-color: #ded1ad;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/*** Ankerlinks unter Header **************************************************/
+#start,
+#reservierung,
+#about {
+  scroll-margin-top: 10vh; /* Platz über dem Ankerlink, um den Header zu berücksichtigen */
+}
+/*** ENDE Ankerlinks unter Header **************************************************/
+
+.container {
+  padding: 0.2% 5% 0.2% 5%;
+  max-width: 100%;
+}
+
+.logo-box {
+  float: left;
+  margin-right: 20px;
+}
+
+.logo-box a {
+  outline: none;
+  display: block;
+}
+
+.logo-box img {
+  display: block;
+}
+nav {
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+nav li {
+  display: inline-block;
+  margin-left: 25px;
+  height: 70px;
+  line-height: 70px;
+  transition: 0.5s linear;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: #a0340d;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+nav a:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  background: #868686;
+  transition: width 0.5s linear;
+}
+nav a:hover:after {
+  width: 100%;
+}
+
+@media screen and (max-width: 660px) {
+  header {
+    text-align: center;
+  }
+  .logo-box {
+    float: none;
+    display: inline-block;
+    margin: 0 0 16px 0;
+  }
+  ul {
+    float: none;
+  }
+  nav li:first-of-type {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  nav {
+    overflow: visible;
+  }
+  nav li {
+    display: block;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+  }
+  nav li:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  nav a:after {
+    content: none;
+  }
+}
+
+/***START**************************************************************************/
+
+#start {
+  background-image: url("./img/GH_start.jpg");
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#start h1 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Nimbus Roman D Extra Bold";
+  font-size: 70px;
+  color: white;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+  background-color: #ffffff40;
+  padding: 20px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  #start h1 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Nimbus Roman D Extra Bold";
+    font-size: 40px;
+    color: white;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+    background-color: #ffffff40;
+    padding: 20px 20px;
+  }
+}
+
+#start .fade-in-text {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#orderForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#dishesTable {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #dddddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+        
+      
+h2 {
+    text-align: center;
+        }
+/***ABOUT**************************************************************************/
+
+#about {
+  padding: 20px 20px 20px 20px;
+  background-color: #a03516;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+.text-column {
+  width: 100%;
+  padding-right: 10%;
+  color: white;
+}
+
+.image-column {
+  width: 100%;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .flex-container {
+    flex-direction: row;
+  }
+
+  .text-column,
+  .image-column {
+    flex: 1;
+  }
+}
+
+#about h2 {
+  font-family: "Nimbus Roman D Extra Bold";
+  font-size: 40px;
+  color: #ded1ad;
+}
+
+#about {
+  background-color: #a03516;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1% 5% 6% 10%;
+}
+
+#about img {
+  width: 100%;
+  height: auto;
+}
+
+#about .column {
+  border-radius: 8px;
+  flex: 1;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .column {
+    width: 100%;
+    flex: auto;
+    max-width: 49%;
+  }
+}
+
+/***KUECHENTEXT**************************************************************************/
+
+#kuechentext h2 {
+  font-family: "Nimbus Roman D Extra Bold";
+  font-size: 40px;
+  color: #a03516;
+}
+
+#kuechentext {
+  background-color: #ded1ad;
+  text-align: center;
+  padding: 20px 40px 20px 40px;
+}
+
+/***IMAGE**************************************************************************/
+
+#foto {
+  background-image: url("./img/GH_TellerSection.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+/***text**************************************************************************/
+
+h1 {
+  font-family: "Nimbus Roman D Extra Bold";
+  font-size: 40px;
+  color: #a03516;
+}
+
+#text {
+  padding: 3rem;
+  background-color: #ded1ad;
+  padding: 1% 5% 6% 25%;
+  text-align: center;
+  padding: 20px 40px 20px 40px;
+}
+
+#text h2 {
+  font-family: "Nimbus Roman D Extra Bold";
+  font-size: 40px;
+  color: #a03516;
+}
+
+#text h3 {
+  font-family: "Nimbus Roman D Extra Bold";
+  font-size: 40px;
+  color: #a03516;
+}
+
+/***Footer**************************************************************************/
+
+footer {
+  background-color: #a03516;
+  color: white;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer p {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer span {
+  font-weight: 700;
+}
+
+.footer-column {
+  width: calc(33.33% - 1rem);
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+/***SLIDER*************************************************************************/
+.slider-container {
+  position: relative;
+  margin: auto;
+  max-width: 800px;
+  margin-bottom: 30px;
+  z-index: 1;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+/* ambiente***************************************************************** */
+
+#ambiente h1 {
+  font-family: "Nimbus Roman D Bold";
+  font-size: 40px;
+  color: #a03516;
+  text-align: center;
+}
+
+#ambiente h2 {
+  font-family: "Nimbus Roman D Bold";
+  font-size: 40px;
+  color: #a03516;
+  text-align: center;
+}
+
+#ambiente p {
+  font-family: "nimbus-sans";
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  padding: 0px 50px 50px 50px;
+}
+
+.image-container img {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: flex;
+  width: 60%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+  box-shadow: 8px 8px white;
+}
+
+/* speisekarte***************************************************************** */
+
+.trennlinie {
+  width: 50%; /* sorgt dafür, dass die Trennlinie die gesamte Breite des Containers einnimmt */
+  border: 1px solid #a03516; /* Farbe der Trennlinie */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  opacity: 0.5;
+}
+#speisekarte {
+  padding: 3rem;
+  background-color: #ded1ad;
+}
+
+#speisekarte h1 {
+  font-family: "Nimbus Roman D Extra Bold";
+  font-size: 40px;
+  color: #a03516;
+  text-align: center;
+}
+
+#speisekarte h2 {
+  font-family: "Nimbus Roman D Bold";
+  font-size: 30px;
+  color: #a03516;
+  text-align: center;
+}
+
+#speisekartendownload button {
+  background-color: #ded1ad;
+  padding: 10px 20px;
+  border-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#speisekartendownload button:hover {
+  background-color: #a03516;
+}
+
+#speisekartendownload a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-family: "Nimbus Roman D Extra Bold";
+}
+
+/* eingefügt Maik Büttner 07.04.24
+/* speisekarte special********************************************************* */
+
+/* Start Specials */
+#saisonspecials {
+  padding: 3rem;
+  background-color: #ded1ad;
+  text-align: center;
+}
+
+#saisonspecials h1 {
+  font-family: "Nimbus Roman D Extra Bold";
+  font-size: 40px;
+  color: #a03516;
+  text-align: center;
+}
+
+.specials {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.specials-eintrag {
+  /* gleich wie .gericht */
+  flex-grow: 1;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  position: relative;
+  float: left;
+  background-color: #ded1ad;
+  height: 450px;
+  min-width: 300px;
+  padding: 0;
+  transition: all 0.8s;
+}
+
+.specials-eintrag:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  flex-grow: 1.25;
+}
+
+.specialsbeschreibung {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background-color: #ded1ad;
+  padding-top: 0px;
+  z-index: 2;
+}
+
+.specialsbeschreibung:hover {
+  background-color: #a03516;
+  color: white;
+}
+
+.specialsfoto {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.oben {
+  top: 0;
+}
+
+.unten {
+  bottom: 0;
+}
+
+@media only screen and (max-width: 760px) {
+  .text-mobile-pos {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .img-mobile-pos {
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .specialsfoto.oben {
+    top: 50%;
+  }
+}
+
+/* frühlingsspecialsfotos */
+.spargel {
+  background-image: url("./img/spargelmitkartoffeln.jpeg");
+}
+
+.topfenknoedel {
+  background-image: url("./img/topfenknoedel.jpeg");
+}
+
+.rhabarber {
+  background-image: url("./img/rhabarber.jpeg");
+}
+
+/* sommerspecialsfotos */
+.forellenfilet {
+  background-image: url("./img/forellenfilet.jpeg");
+}
+
+.gemuesestrudel {
+  background-image: url("./img/gemuesestrudel.jpeg");
+}
+
+.erdbeertorte {
+  background-image: url("./img/erdbeertorte.jpeg");
+}
+
+/* herbstspecialsfotos */
+.wildgulasch {
+  background-image: url("./img/wildgulasch.jpeg");
+}
+
+.risotto {
+  background-image: url("./img/risotto.jpeg");
+}
+
+.apfelstrudel {
+  background-image: url("./img/apfelstrudel.jpeg");
+}
+
+/* winterspecialsfotos */
+.rinderbraten {
+  background-image: url("./img/rinderbraten.jpeg");
+}
+
+.spaetzle {
+  background-image: url("./img/spaetzle.jpeg");
+}
+
+.schoki {
+  background-image: url("./img/schoki.jpeg");
+}
+/* Ende Specials ***/
+
+@media (max-width: 600px) {
+  nav ul li {
+    width: 100%;
+    padding: 15px 0px;
+  }
+  nav ul {
+    display: none;
+  }
+}
+.burgericon {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+.burgericon div {
+  width: 90%;
+  margin: 7px 5%;
+  height: 3px;
+  background-color: black;
+}
+@media (max-width: 600px) {
+  .burgericon {
+    display: block;
+  }
+}
+#navigation {
+  opacity: 0;
+}
+#navigation:checked ~ ul {
+  display: block;
+}
+#navigation:checked ~ label .burgericon {
+  margin-top: 15px;
+}
+#navigation:checked ~ label .burgericon div:first-of-type {
+  rotate: 45deg;
+}
+#navigation:checked ~ label .burgericon div:last-child {
+  rotate: -45deg;
+  margin-top: -10px;
+}
+#navigation:checked ~ label .burgericon div:nth-child(2) {
+  display: none;
+}
+
+
+/*******LOGIN***********************************************************************/
+#login * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#login .form-container {
+  width: 520px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: white;
+  border-radius: 20px;
+  padding: 30px 40px;
+
+}
+
+#login .form-container h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+#login .form-container .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+#login .form-container input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  padding: 20px 45px 20px 20px;
+}
+
+#login .form-container input::placeholder {
+  color: white;
+}
+
+#login .form-container i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+#login .form-container .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+#login .form-container .remember-forgot label input {
+  accent-color: white;
+  margin-right: 3px;
+}
+
+#login .form-container .remember-forgot a {
+  color: white;
+  text-decoration: none;
+}
+
+#login .form-container .remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+#login .form-container .btn {
+  width: 100%;
+  height: 45px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+#login .form-container .register-link {
+  font-size: 14px;
+  text-align: center;
+}
+
+#login .form-container .register-link p a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#login .form-container .register-link p a:hover {
+  text-decoration: underline;
+}
+
+#register-form {
+  display: none;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#login .form-container {
+  animation: fadeUp 1s ease-in-out;
+}
